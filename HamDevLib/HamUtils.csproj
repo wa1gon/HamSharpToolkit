@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
 	<ImplicitUsings>enable</ImplicitUsings>
 	<LangVersion>11.0</LangVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageOutputPath>c:\NuGet</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

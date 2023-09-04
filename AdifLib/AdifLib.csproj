@@ -8,6 +8,7 @@
     <Copyright>Darryl Wagner WA1GON</Copyright>
     <SignAssembly>False</SignAssembly>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>c:\NuGet</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
