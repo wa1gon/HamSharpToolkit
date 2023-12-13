@@ -1,8 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace HamSharpToolkit.HamUtils
-;
+namespace HamSharpToolkit.HamUtils;
 
 public class Qso
 {

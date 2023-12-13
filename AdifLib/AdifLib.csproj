@@ -1,7 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>ADIF Utilities for reading/write ADIF and JSON QSOs</Title>
@@ -9,15 +8,13 @@
     <SignAssembly>False</SignAssembly>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageOutputPath>c:\NuGet</PackageOutputPath>
+    <PackageTags>Amateur radio;ham radio;adif</PackageTags>
+    <PackageId>Wa1gon.HamSharpToolkit.ADIF</PackageId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\HamDevLib\HamUtils.csproj" />
   </ItemGroup>
-
-
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 </Project>

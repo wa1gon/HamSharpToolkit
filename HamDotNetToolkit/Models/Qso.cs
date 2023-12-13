@@ -19,8 +19,6 @@ public class Qso
     public bool BackedUp { get; set; } = false;
     public DateTime BackupDate { get;set; }
     public DateTime LastUpdate { get;set; }
-    public string 
-
 
     public virtual ICollection<QsoDetail> QsoDetails { get; set; } = new List<QsoDetail>();
     public virtual ICollection<AwardsQSO> AwardsQSOs { get; set; } = new List<AwardsQSO>();

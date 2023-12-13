@@ -1,12 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
 	<ImplicitUsings>enable</ImplicitUsings>
-	<LangVersion>11.0</LangVersion>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<PackageOutputPath>c:\NuGet</PackageOutputPath>
+	<PackageId>Wa1gon.HamSharpToolkit</PackageId>
+	<Authors>Darryl Wagoner</Authors>
+	<Company>WA1GON</Company>
+	<Product>HamSharpToolkit</Product>
+	<PackageTags>Amateur radio;ham radio;adif</PackageTags>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
