@@ -1,4 +1,4 @@
-﻿using HamSharpToolkit.HamUtils;
+﻿using HamDotNetToolkit;
 using Newtonsoft.Json;
 
 namespace HamSharpToolkit.Adif
@@ -204,9 +204,9 @@ namespace HamSharpToolkit.Adif
 
                                                 currentQso.Freq = decimal.Parse(value);
 
-                                            else if (tag.Equals("Freq_Rx", StringComparison.OrdinalIgnoreCase))
+                                            //else if (tag.Equals("Freq_Rx", StringComparison.OrdinalIgnoreCase))
 
-                                                currentQso.FreqRx = decimal.Parse(value);
+                                            //    currentQso.FreqRx = decimal.Parse(value);
 
 
                                             else if (tag.Equals("State", StringComparison.OrdinalIgnoreCase))

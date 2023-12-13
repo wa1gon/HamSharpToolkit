@@ -1,4 +1,5 @@
-﻿using HamSharpToolkit.HamUtils;
+﻿//using HamSharpToolkit.HamUtils;
+using HamDotNetToolkit;
 using Newtonsoft.Json;
 using System.Text.Json;
 //using System.Text.Json;
@@ -75,8 +76,8 @@ namespace HamSharpToolkit.Adif
 
                 if (qso.Freq > 0)
                     writer.WriteLine($"<freq:{qso.Freq.ToString().Length}>{qso.Freq.ToString()}");
-                if (qso.FreqRx > 0)
-                    writer.WriteLine($"<freq_rx:{qso.FreqRx.ToString().Length}>{qso.FreqRx.ToString()}");
+                //if (qso.FreqRx > 0)
+                //    writer.WriteLine($"<freq_rx:{qso.FreqRx.ToString().Length}>{qso.FreqRx.ToString()}");
 
                 if (qso.State.Length > 0)
                     writer.WriteLine($"<state:{qso.State.Length}>{qso.State}");
@@ -120,7 +121,7 @@ namespace HamSharpToolkit.Adif
                         //{ "QSL_SENT", qso.QSLSent },
                         //{ "QSL_RCVD", qso.QSLRcvd },
                         { "FREQ", qso.Freq.ToString() },
-                        { "FREQ_RX", qso.FreqRx.ToString() },
+                        //{ "FREQ_RX", qso.FreqRx.ToString() },
                         { "STATE", qso.State },
                         { "COUNTY", qso.County }
                     };

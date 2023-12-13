@@ -1,5 +1,5 @@
 using HamSharpToolkit.Adif;
-using HamSharpToolkit.HamUtils;
+//using HamSharpToolkit.HamUtils;
 
 namespace AdifTest
 {

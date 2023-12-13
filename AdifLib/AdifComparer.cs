@@ -1,4 +1,5 @@
-﻿using HamSharpToolkit.HamUtils;
+﻿using HamDotNetToolkit;
+
 
 namespace HamSharpToolkit.Adif
 {

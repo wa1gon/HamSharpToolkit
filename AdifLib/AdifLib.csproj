@@ -12,9 +12,9 @@
     <PackageId>Wa1gon.HamSharpToolkit.ADIF</PackageId>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HamDevLib\HamUtils.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <ProjectReference Include="..\HamDotNetToolkit\HamDotNetToolkit.csproj" />
   </ItemGroup>
 </Project>

@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\HamDevLib\HamUtils.csproj" />
-  </ItemGroup>
-
 </Project>
