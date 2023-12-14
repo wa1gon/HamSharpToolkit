@@ -19,10 +19,11 @@ public class FileDownloader
         client = new HttpClient();
     }
 
-    public async Task DownloadFileAsync(string fileUrl, string filePath)
+    public async Task<string> DownloadFileAsync(string fileUrl)
     {
         try
         {
+            string filePath = Path.GetTempFileName();
             HttpResponseMessage response = await client.GetAsync(fileUrl, HttpCompletionOption.ResponseHeadersRead);
 
             if (!response.IsSuccessStatusCode)
@@ -30,11 +31,13 @@ public class FileDownloader
                 throw new Exception($"Error: {response.StatusCode}");
             }
 
+
             using (var stream = await response.Content.ReadAsStreamAsync())
             using (var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 await stream.CopyToAsync(fileStream);
             }
+            return filePath;
         }
         catch (Exception ex)
         {
