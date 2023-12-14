@@ -32,14 +32,12 @@ public class FileDownloader
             }
 
 
-            using (var stream = await response.Content.ReadAsStreamAsync())
-            using (var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
-            {
-                await stream.CopyToAsync(fileStream);
-            }
+            await using var stream = await response.Content.ReadAsStreamAsync();
+            await using var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None);
+            await stream.CopyToAsync(fileStream);
             return filePath;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             throw;
         }
